@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,7 +12,32 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className="min-h-screen flex flex-col ">
+        <header className="bg-white relative w-full">
+          <Navbar />
+          <div className="flex max-w-7xl mx-auto px-6 md:px-8 lg:px-10 ">
+            <div className="flex flex-col border-b w-1/2 ">
+              <div className="py-3">
+                <h1 className="text-[34px] font-mono font-semibold">25+</h1>
+                <span className="text-[15px] font-mono">Tahun Pengalaman</span>
+              </div>
+            </div>
+            <div className="flex flex-col border-b w-full">
+              <div className="py-3">
+                <h1 className="text-[34px] font-mono font-semibold">400+</h1>
+                <span className="text-[15px] font-mono">Klien Bahagia</span>
+              </div>
+            </div>
+          </div>
+        </header>
+        <main className="px-5 grow">{children}</main>
+
+        <footer className="flex border-t justify-center items-center text-[13px] py-3">
+          <div className="flex before:max-w-7xl h-14 items-center">
+            <div>Hak Cipta &#9400; 2024 Hadar Karya Utama</div>
+          </div>
+        </footer>
+      </body>
     </html>
   );
 }
