@@ -1,6 +1,7 @@
 import Card from "@/components/Card";
 import CardService from "@/components/CardService";
 import Consult from "@/components/Consult";
+import ReviewCust from "@/components/ReviewCust";
 
 export default function Home() {
   return (
@@ -101,11 +102,7 @@ export default function Home() {
         </div>
 
         <Consult />
-        {/* sesi 5 Ulasan Pelanggan */}
-        <div className="flex flex-col lg:flex-row">
-          <div className="w-full">title</div>
-          <div className="w-full">Ulasan</div>
-        </div>
+        <ReviewCust />
       </div>
       <CardService />
       <Card />

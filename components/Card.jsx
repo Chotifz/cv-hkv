@@ -16,11 +16,11 @@ const Card = () => {
           </p>
         </span>
 
-        <div>
+        <a href="#">
           <h1 className="py-2.5 px-6 sm:py-3 sm:px-7 lg:py-3.5 lg:px-9 rounded-full bg-orange-400 text-white font-semibold font-teko text-[13px] lg:text-base">
             SELENGKAPNYA
           </h1>
-        </div>
+        </a>
       </div>
     </div>
   );
