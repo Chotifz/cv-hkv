@@ -4,7 +4,7 @@ const Burger = ({ handleClick, isActive }) => {
   return (
     <ul
       onClick={handleClick}
-      className={`flex flex-col hover:cursor-pointer gap-[3px] justify-center lg:hidden border-2 border-separate p-3 ${
+      className={`flex flex-col hover:cursor-pointer gap-[3px] justify-center lg:hidden border-2 b p-3 ${
         isActive ? "active" : ""
       }`}
     >

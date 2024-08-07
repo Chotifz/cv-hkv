@@ -76,7 +76,7 @@ export default function Navbar() {
               anda.
             </p>
           </span>
-          <div className="">
+          <div>
             <h1 className="py-3 px-6 rounded-full bg-orange-400 text-white font-teko inline-block">
               SELENGKAPNYA
             </h1>
@@ -84,7 +84,7 @@ export default function Navbar() {
         </div>
       </nav>
       <div
-        className={`lg:hidden transition-all duration-500 bg-white transform ${
+        className={`w-full lg:hidden transition-all duration-500 bg-white transform absolute top-[90px] ${
           isActive ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
         } overflow-hidden ease-in-out z-10`}
       >

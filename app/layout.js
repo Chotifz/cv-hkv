@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
             </div>
           </div>
         </header>
-        <main className="px-5 grow">{children}</main>
+        <main className=" grow">{children}</main>
 
         <footer className="flex border-t justify-center items-center text-[13px] py-3">
           <div className="flex before:max-w-7xl h-14 items-center">
