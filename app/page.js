@@ -2,11 +2,57 @@ import Card from "@/components/Card";
 import CardService from "@/components/CardService";
 import Consult from "@/components/Consult";
 import ReviewCust from "@/components/ReviewCust";
+import product1 from "@/public/genset.png";
+import Image from "next/image";
 
 export default function Home() {
   return (
-    <div>
-      {" "}
+    <>
+      <div className="relative h-[845px] md:h-[565px] lg:h-[760px] bg-image-card">
+        <div className="absolute inset-0 bg-black opacity-55 z-0"></div>
+        <div className="relative max-w-7xl mx-auto py-[7px] px-6 md:px-8 lg:px-10 ">
+          <div className="flex flex-col py-14  gap-7 md:gap-12 md:w-1/2 mt-5 text-white ">
+            <span className="flex flex-col gap-5">
+              <h1 className="font-semibold text-4xl sm:text-5xl lg:text-5xl">
+                Nikmati Kemudahan Mendapatkan{" "}
+                <span className="text-green-400 font-bold">SPAREPART</span>{" "}
+                Berkualitas
+              </h1>
+              <p className="text-[14px] md:text-[16px] lg:text-[18px] font-medium">
+                Temukan suku cadang mobil, traktor, genset dan mesin industri
+                berkualitas. Hadar Karya Utama siap mendukung kesuksesan bisnis
+                anda.
+              </p>
+            </span>
+            <div>
+              <button className="py-2.5 px-6 inline-block rounded-full bg-green-500 text-white text-base">
+                Hubungi Kami
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="flex flex-col items-center justify-center mx-auto py-6 gap-4 font-semibold text-[26px]">
+        <h1 className="text-[20px]">
+          {" "}
+          <span className="text-green-400 font-bold">SPAREPART</span> Unggulan
+          Untuk Anda
+        </h1>
+        <div
+          id="card"
+          className="flex flex-col items-center justify-center bg-slate-500 w-[195px] rounded-xl"
+        >
+          {/* image */}
+          <div className="flex flex-col items-center mx-auto bg-slate-300 w-[165px] h-[170px]">
+            <Image width={160} height={185} src={product1} />
+          </div>
+          <h2 className="text-[12x]">title</h2>
+        </div>
+      </div>
+
+      {/* tes */}
+
       <div className="max-w-7xl mx-auto py-3 px-5  md:px-8 lg:px-10">
         {/* sesi 2 */}
         <div className="flex flex-col lg:flex-row  border-b w-full py-4">
@@ -106,6 +152,6 @@ export default function Home() {
       </div>
       <CardService />
       <Card />
-    </div>
+    </>
   );
 }

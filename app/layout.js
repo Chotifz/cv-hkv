@@ -15,20 +15,6 @@ export default function RootLayout({ children }) {
       <body className="min-h-screen flex flex-col ">
         <header className="bg-white relative w-full">
           <Navbar />
-          <div className="flex max-w-7xl mx-auto px-6 md:px-8 lg:px-10 ">
-            <div className="flex flex-col border-b w-1/2 ">
-              <div className="py-3">
-                <h1 className="text-[34px] font-mono font-semibold">25+</h1>
-                <span className="text-[15px] font-mono">Tahun Pengalaman</span>
-              </div>
-            </div>
-            <div className="flex flex-col border-b w-full">
-              <div className="py-3">
-                <h1 className="text-[34px] font-mono font-semibold">400+</h1>
-                <span className="text-[15px] font-mono">Klien Bahagia</span>
-              </div>
-            </div>
-          </div>
         </header>
         <main className=" grow">{children}</main>
 

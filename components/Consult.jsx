@@ -2,7 +2,7 @@ import React from "react";
 
 const Consult = () => {
   return (
-    <div className="w-full items-center justify-center flex h-[315px] lg:h-[520px] bg-orange-400 rounded-3xl lg:rounded-[3.5rem]">
+    <div className="w-full items-center justify-center flex h-[315px] lg:h-[520px] bg-green-600 rounded-3xl lg:rounded-[3.5rem]">
       <div className="flex flex-col items-center justify-beetween text-white p-8 text-center gap-4 lg:gap-6">
         <h1 className="font-semibold ">LAKUKAN LANGKAH PERTAMA</h1>
         <h2 className="font-semibold text-2xl lg:text-5xl">
