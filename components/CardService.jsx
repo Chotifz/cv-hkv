@@ -14,7 +14,7 @@ const CardService = () => {
               Selalu Siap Mendukung Anda
             </h2>
             <div>
-              <span className="px-12 py-[2px] bg-orange-400 inline-block"></span>
+              <span className="px-12 py-[2px] bg-green-500 inline-block"></span>
             </div>
           </span>
           <div>

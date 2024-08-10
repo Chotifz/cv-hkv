@@ -9,3 +9,12 @@
   background-repeat: no-repeat;
   width: 100%;
 }
+
+.daun-i {
+  background-image: url("/daun.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 22px;
+  height: 18px;
+}

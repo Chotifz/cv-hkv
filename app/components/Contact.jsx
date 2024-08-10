@@ -1,4 +1,4 @@
-const Card = () => {
+const Contact = () => {
   return (
     <div className="relative bg-image-card">
       <div className="absolute inset-0 bg-black opacity-55 z-0"></div>
@@ -17,8 +17,8 @@ const Card = () => {
         </span>
 
         <a href="#">
-          <h1 className="py-2.5 px-6 sm:py-3 sm:px-7 lg:py-3.5 lg:px-9 rounded-full bg-orange-400 text-white font-semibold font-teko text-[13px] lg:text-base">
-            SELENGKAPNYA
+          <h1 className="py-2.5 px-6 sm:py-3 sm:px-7 lg:py-3.5 lg:px-9 rounded-full bg-green-500 text-white font-semibold font-teko text-[13px] lg:text-base">
+            HUBUNGI KAMI
           </h1>
         </a>
       </div>
@@ -26,4 +26,4 @@ const Card = () => {
   );
 };
 
-export default Card;
+export default Contact;
