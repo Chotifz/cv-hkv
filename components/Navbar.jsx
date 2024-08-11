@@ -3,6 +3,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import Burger from "./Burger";
+import iconWa from "@/public/logo-wa.png";
+import Image from "next/image";
 
 export default function Navbar() {
   const [isActive, setIsActive] = useState(false);
@@ -38,30 +40,26 @@ export default function Navbar() {
               >
                 <Link href="/">Beranda</Link>
               </li>
-              <li
-                className={
-                  pathname === "/about" ? "text-green-400 ml-auto" : "ml-auto"
-                }
-              >
-                <Link href="/about">Tentang</Link>
-              </li>
-              <li className={pathname === "/services" ? "text-green-400" : ""}>
-                <Link href="/services">Layanan</Link>
-              </li>
+
               <li className={pathname === "/blog" ? "text-green-400" : ""}>
                 <Link href="/product" prefetch={false}>
                   Produk
                 </Link>
               </li>
-              {/* <li className={pathname === "/contact" ? "text-green-400" : ""}>
-                <Link href="#" prefetch={false}>
-                  Kontak
-                </Link>
-              </li> */}
-              <a href="#">
-                <h1 className="py-2.5 px-6 rounded-full bg-green-500 text-white  text-base">
-                  SELENGKAPNYA
-                </h1>
+              <li className={pathname === "/services" ? "text-green-400" : ""}>
+                <Link href="/services">Layanan</Link>
+              </li>
+
+              <a
+                href="https://wa.me/+6282278639085"
+                className=" flex py-2.5 px-6 rounded-full bg-green-500 text-white  text-base gap-2"
+              >
+                <Image
+                  src={iconWa}
+                  alt="service-logo"
+                  className="w-[20px] md:w-[25px]  "
+                />
+                <h1 className="">Contact</h1>
               </a>
             </ul>
           </div>
@@ -84,7 +82,7 @@ export default function Navbar() {
               Beranda
             </Link>
           </div>
-          <div className="border-t">
+          {/* <div className="border-t">
             <Link
               className={`p-3.5 px-8 ${
                 pathname === "/about"
@@ -94,6 +92,19 @@ export default function Navbar() {
               href="/about"
             >
               Tentang
+            </Link>
+          </div> */}
+          <div className="border-t">
+            <Link
+              className={`p-3.5 px-8 ${
+                pathname === "/product"
+                  ? "text-green-400 p-2 block "
+                  : "p-2 block"
+              }`}
+              href="/product"
+              prefetch={false}
+            >
+              Produk
             </Link>
           </div>
           <div className="border-t">
@@ -108,32 +119,6 @@ export default function Navbar() {
               Layanan
             </Link>
           </div>
-          <div className="border-t">
-            <Link
-              className={`p-3.5 px-8 ${
-                pathname === "/product"
-                  ? "text-green-400 p-2 block "
-                  : "p-2 block"
-              }`}
-              href="/product"
-              prefetch={false}
-            >
-              Produk
-            </Link>
-          </div>
-          {/* <div className="border-t">
-            <Link
-              className={`p-3.5 px-8 ${
-                pathname === "/contact"
-                  ? "text-green-400 p-2 block "
-                  : "p-2 block"
-              }`}
-              href="/contact"
-              prefetch={false}
-            >
-              Kontak
-            </Link>
-          </div> */}
         </div>
       </div>
     </div>

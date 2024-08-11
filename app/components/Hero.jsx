@@ -7,26 +7,18 @@ const Hero = () => {
       <div className="absolute inset-0 bg-black opacity-55 z-0"></div>
       <div className="relative w-full h-full flex flex-col md:flex-row items-center  max-w-7xl mx-auto  px-6 md:px-8 lg:px-10 gap-8 ">
         {/* card 1 */}
-        <div className=" w-full h-full flex flex-col py-14  gap-7 md:gap-12  mt-5 text-white ">
+        <div className=" w-full h-full flex flex-col py-14  gap-7 md:gap-12  mt-16 text-white ">
           <span className="flex flex-col gap-5">
-            <h1 className="font-semibold text-4xl sm:text-5xl lg:text-5xl">
+            <h1 className="font-semibold text-4xl sm:text-4xl lg:text-5xl">
               Nikmati Kemudahan Mendapatkan{" "}
               <span className="text-green-400 font-bold">SPAREPART</span>{" "}
               Berkualitas
             </h1>
-            <p className="text-[16px] md:text-[18px] lg:text-[20px] font-medium">
+            <p className="text-[22px] md:text-[24px] lg:text-[26px] font-medium">
               Temukan suku cadang berkualitas. Hadar Karya Utama siap mendukung
               kesuksesan bisnis anda.
             </p>
           </span>
-          <div>
-            <a
-              href="#"
-              className="py-2.5 px-6 inline-block rounded-full bg-green-500 text-white text-base"
-            >
-              Selengkapnya
-            </a>
-          </div>
         </div>
 
         {/* card 2 */}
