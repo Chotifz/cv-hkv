@@ -18,3 +18,41 @@
   width: 22px;
   height: 18px;
 }
+
+.hide-scrollbar {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+/* Animasi untuk bergerak dari kanan ke kiri */
+@keyframes scroll-right-to-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Animasi untuk bergerak dari kiri ke kanan */
+@keyframes scroll-left-to-right {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+#image-merk1,
+#image-merk3 {
+  animation: scroll-right-to-left 10s linear infinite;
+}
+
+#image-merk2 {
+  animation: scroll-left-to-right 10s linear infinite;
+}
