@@ -10,7 +10,7 @@ const About = () => {
         <span>
           <div className="inline-block py-[1.5px] px-12 bg-green-500"></div>
         </span>
-        <p className="text-[15px] font-mono">
+        <p className="text-[16px] ">
           Hadar Karya Utama adalah agensi terpercaya dalam menyediakan komponen
           penting untuk industri dan kendaraan. Kami hadir dengan layanan
           berkualitas tinggi.

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import CardService from "@/components/CardService";
 import CardProduct from "./components/CardProduct";
 import Hero from "./components/Hero";
@@ -13,13 +14,25 @@ import mesinGenset from "@/public/mesingenset.png";
 import truckQuick from "@/public/truckquick.png";
 import truck from "@/public/truck.png";
 import tritonDC from "@/public/triton.png";
-// import trraktorL from "@/public/traktor.png";
+import iconWa from "@/public/logo-wa.png";
+
+import traktorL from "@/public/mobil.png";
 // import trraktorL from "@/public/traktor.png"
 // import trraktorL from "@/public/traktor.png"
 
 export default function Home() {
   return (
-    <>
+    <div className="">
+      <a
+        href="https://wa.me/+6282278639085"
+        className="z-10 bottom-20 right-7 fixed"
+      >
+        <Image
+          src={iconWa}
+          alt="service-logo"
+          className="w-[40px] md:w-[52px]  "
+        />
+      </a>
       <Hero />
       {/* product */}
       <div className="flex flex-col items-center justify-center mx-auto py-6 pt-12 gap-4 font-semibold text-[26px] overflow-hidden">
@@ -29,9 +42,9 @@ export default function Home() {
         </h1>
         <div className="flex items-center justify-center h-[540px] sm:h-[665px] md:h-[815px] lg:h-[905px] w-full max-w-7xl flex-col  p-4 lg:px-28 md:px-8">
           <div className="flex items-center justify-center  w-full h-full">
-            <CardProduct title={"Hino Dump Truck 130 HD"} image={product1} />
+            <CardProduct title={"Hino Dump Truck 130 HD"} image={""} />
             <CardProduct title={"Hino Damp Truck 500"} image={truck} />
-            <CardProduct title={"Traktor Landini"} image={tritonDC} />
+            <CardProduct title={"Traktor Landini"} image={traktorL} />
           </div>
           <div className="flex items-center justify-center   w-full h-full">
             <CardProduct title={"Triton Double Cabin"} image={tritonDC} />
@@ -49,10 +62,12 @@ export default function Home() {
       <div className=" relative max-w-7xl mx-auto py-[7px] px-6 md:px-8 lg:px-10">
         <Merk />
         <Services />
-        {/* <About /> */}
+        <About />
       </div>
       <CardService />
-      <Contact />
-    </>
+      <div id="contact">
+        <Contact />
+      </div>
+    </div>
   );
 }
