@@ -2,12 +2,12 @@ import React from "react";
 
 const CardService = () => {
   return (
-    <div className="bg-gray-100 lg:h-[875px]">
-      <div className="max-w-7xl w-full h-full items-center justify-center mx-auto py-3 px-5  md:px-8 lg:px-10 flex flex-col md:flex-row-reverse lg:flex-row-reverse">
-        <div className="py-12 w-full ">
-          <div className="md:w-[295px] lg:w-full md:h-[390px] h-[350px] rounded-t-full bg-image-card"></div>
+    <div className="bg-gray-100  lg:h-[695px]">
+      <div className="max-w-7xl w-full h-full items-center justify-center mx-auto py-12 px-5  md:px-8 lg:px-10 flex flex-col md:flex-row-reverse lg:flex-row-reverse">
+        <div className="w-full h-full  ">
+          <div className="md:w-[295px] lg:w-full md:h-[390px] h-[350px] lg:h-[590px] rounded-t-full bg-image-card"></div>
         </div>
-        <div className="flex flex-col w-full gap-3 ">
+        <div className="flex flex-col w-full gap-3  ">
           <span className="flex flex-col gap-3">
             <h1 className="font-semibold">KEUNGGULAN KAMI</h1>
             <h2 className="font-semibold text-2xl">

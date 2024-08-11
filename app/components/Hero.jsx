@@ -17,7 +17,7 @@ const Hero = () => {
           </span>
           <div>
             <a
-              href="/product"
+              href="#"
               className="py-2.5 px-6 inline-block rounded-full bg-green-500 text-white text-base"
             >
               Selengkapnya

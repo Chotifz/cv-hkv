@@ -53,16 +53,16 @@ export default function Navbar() {
                   Produk
                 </Link>
               </li>
-              <li className={pathname === "/contact" ? "text-green-400" : ""}>
-                <Link href="/contact" prefetch={false}>
+              {/* <li className={pathname === "/contact" ? "text-green-400" : ""}>
+                <Link href="#" prefetch={false}>
                   Kontak
                 </Link>
-              </li>
-              <div>
+              </li> */}
+              <a href="#">
                 <h1 className="py-2.5 px-6 rounded-full bg-green-500 text-white  text-base">
                   SELENGKAPNYA
                 </h1>
-              </div>
+              </a>
             </ul>
           </div>
           <Burger handleClick={handleClick} isActive={isActive} />
@@ -121,7 +121,7 @@ export default function Navbar() {
               Produk
             </Link>
           </div>
-          <div className="border-t">
+          {/* <div className="border-t">
             <Link
               className={`p-3.5 px-8 ${
                 pathname === "/contact"
@@ -133,7 +133,7 @@ export default function Navbar() {
             >
               Kontak
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

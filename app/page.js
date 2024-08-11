@@ -22,7 +22,7 @@ export default function Home() {
     <>
       <Hero />
       {/* product */}
-      <div className="flex flex-col items-center justify-center mx-auto py-6 gap-4 font-semibold text-[26px] overflow-hidden">
+      <div className="flex flex-col items-center justify-center mx-auto py-6 pt-12 gap-4 font-semibold text-[26px] overflow-hidden">
         <h1 className="text-[20px] ">
           <span className="text-green-400 font-bold">SPAREPART</span> UNGGULAN
           UNTUK ANDA
