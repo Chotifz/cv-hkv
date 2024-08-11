@@ -26,7 +26,7 @@ const Merk = () => {
       </h1>
       <div className="flex flex-col items-center justify-center py-6 overflow-hidden">
         <div>
-          <div id="image-merk1" className="flex">
+          <div id="image-merk-1" className="flex">
             <ImageMerk image={mitshu} />
             <ImageMerk image={ford} />
             <ImageMerk image={hino} />
@@ -34,7 +34,7 @@ const Merk = () => {
             <ImageMerk image={mercedes} />
           </div>
         </div>
-        <div id="image-merk2" className="flex">
+        <div id="image-merk-2" className="flex">
           <ImageMerk image={kubota} />
           <ImageMerk image={quick} />
           <ImageMerk image={yanmar} />
@@ -42,12 +42,13 @@ const Merk = () => {
           <ImageMerk image={landini} />
           <ImageMerk image={jcb} />
         </div>
-        <div id="image-merk3" className="flex">
+        <div id="image-merk-3" className="flex">
           <ImageMerk image={tanka} />
           <ImageMerk image={firman} />
           <ImageMerk image={stihl} />
           <ImageMerk image={ryu} />
           <ImageMerk image={isuzu} />
+          <ImageMerk image={perkins} />
         </div>
       </div>
     </div>

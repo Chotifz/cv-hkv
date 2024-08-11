@@ -1,10 +1,8 @@
 import Image from "next/image";
-import CardService from "@/components/CardService";
 import CardProduct from "./components/CardProduct";
 import Hero from "./components/Hero";
 import Merk from "./components/Merk";
 import Services from "./components/Services";
-import About from "./components/About";
 import Contact from "./components/Contact";
 
 import product1 from "@/public/genset.png";
@@ -15,10 +13,7 @@ import truckQuick from "@/public/truckquick.png";
 import truck from "@/public/truck.png";
 import tritonDC from "@/public/triton.png";
 import iconWa from "@/public/logo-wa.png";
-
 import traktorL from "@/public/mobil.png";
-// import trraktorL from "@/public/traktor.png"
-// import trraktorL from "@/public/traktor.png"
 
 export default function Home() {
   return (
@@ -62,9 +57,8 @@ export default function Home() {
       <div className=" relative max-w-7xl mx-auto py-[7px] px-6 md:px-8 lg:px-10">
         <Merk />
         <Services />
-        <About />
       </div>
-      <CardService />
+
       <div id="contact">
         <Contact />
       </div>
