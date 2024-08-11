@@ -23,7 +23,7 @@ export default function Home() {
       <Hero />
       {/* product */}
       <div className="flex flex-col items-center justify-center mx-auto py-6 gap-4 font-semibold text-[26px] overflow-hidden">
-        <h1 className="text-[20px]">
+        <h1 className="text-[20px] ">
           <span className="text-green-400 font-bold">SPAREPART</span> UNGGULAN
           UNTUK ANDA
         </h1>
@@ -48,9 +48,8 @@ export default function Home() {
 
       <div className=" relative max-w-7xl mx-auto py-[7px] px-6 md:px-8 lg:px-10">
         <Merk />
-
-        <About />
         <Services />
+        {/* <About /> */}
       </div>
       <CardService />
       <Contact />
