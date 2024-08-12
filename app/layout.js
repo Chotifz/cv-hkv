@@ -13,9 +13,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="min-h-screen flex flex-col ">
-        <header className="bg-white relative w-full">
-          <Navbar />
-        </header>
+        <header className="bg-white relative w-full">{/* <Navbar /> */}</header>
         <main className=" grow">{children}</main>
 
         <footer className="flex border-t justify-center items-center text-[13px] py-3">
